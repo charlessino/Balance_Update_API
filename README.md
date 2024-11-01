@@ -33,7 +33,7 @@ Header：Content-Type: application/json;charset=utf-8
 
 | 参数名 | 类型   | 字段长度 | 例子    | 说明                                         |
 | ------ | ------ | -------- | ------- | -------------------------------------------- |
-| transaction_id       | 是   | string  | 32       |          | 流水号，方便双方核对记录       |
+| transaction_id       | 是   | string  | 32       |          | 交易流水号       |
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 玩家余额，如果成功返回最新余额，如果失败返回当前余额   |
 | error_code    | string | 32      |    | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
