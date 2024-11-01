@@ -36,11 +36,7 @@ Header：Content-Type: application/json;charset=utf-8
 | transaction_id       | 是   | string  | 32         | 交易流水号       |
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 玩家余额，如果成功返回最新余额，如果失败返回当前余额   |
-| error_code    | string | 32      |    | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
-| outOrderId    | string | 100      |  OUT_OF_BALANCE  | 其他情况描述 |
-
-
-
+| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
 
 ### <span id="2-----">2 附件</span>
 
