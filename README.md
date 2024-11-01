@@ -55,7 +55,7 @@ Header：Content-Type: application/json;charset=utf-8
 
 #### <span id="22-----">2.2 错误代码</span>
 
-| 参数   | 错误代码     |
+| 参数   | 代码含义     |
 | ---- | -------- |
 | OUT_OF_BALANCE | 余额不足 |
 | OTHERS  | 其他情况 |
