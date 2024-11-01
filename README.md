@@ -44,7 +44,7 @@ Header：Content-Type: application/json;charset=utf-8
 
 ### <span id="2-----">2 附件</span>
 
-#### <span id="21-----">2.1 action_type 资金变动类型</span>
+#### <span id="21-----">2.1 资金变动类型</span>
 
 | 参数   | 资金变动类型     |
 | ---- | -------- |
