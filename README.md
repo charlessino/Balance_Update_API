@@ -23,7 +23,7 @@ Header：Content-Type: application/json;charset=utf-8
 | transaction_id       | 是   | string  | 32       |          | 交易流水号       |
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道玩家ID |
 | action_value     | 是   | decimal | 18,2    | 820.00  | 资金变动的金额，正数代表增加，负数代表扣减，例如100代表余额增加100，-200代表余额扣减200  |
-| action_type | 是   | int | 2    | 1  | 资金变动类型，详见[附件2.1资金变动类型(#21-----)]描述      |
+| action_type | 是   | int | 2    | 1  | 资金变动类型，详见[附件2.1资金变动类型](#21-----)描述      |
 | order_id |    | string | 50    | S03827836  | 如涉及投注订单，这里会传订单号；如果不涉及订单，可能为空    |
 | remarks |    | string | 100    | 01034388769  | 备注，可能为空   |
 | timestamp  |      | string  | 10      |  1730456083   | 时间戳  |
