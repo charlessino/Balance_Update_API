@@ -26,7 +26,7 @@ Endpoint: `/api-v1/balance-check`
 | ----------- | ---- | ------- | -------- | -------- | ------------------------ |
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道玩家ID |
 | timestamp  |  是   | string  | 10      |  1730456083   | 时间戳  |
-| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(transaction_id+member_id+action_value+action_type+timestamp+密钥)    |
+| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | 123  |
 
 ##### <span id="112-----">1.1.2 返回参数</span>
 
