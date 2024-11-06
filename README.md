@@ -13,7 +13,7 @@
     + [2.2 error_code](#22-----)
 
 ### <span id="1-----">1 接口列表</span>
-
+<br>
 #### <span id="11-----">1.1 用户余额查询</span>
 
 Header：`Content-Type: application/json;charset=utf-8`
@@ -35,8 +35,7 @@ Endpoint: `/api-v1/balance-check`
 | status    | int | 1  |    1     | 查询结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 玩家余额   |
 | error_code    | string | 32      |  TIME_OUT  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
-
-
+<br><br>
 #### <span id="12-----">1.2 请求余额更新</span>
 
 Header：`Content-Type: application/json;charset=utf-8`
@@ -64,7 +63,7 @@ Endpoint: `/api-v1/balance-update`
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 玩家余额，如果成功返回最新余额，如果失败返回当前余额   |
 | error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
-
+<br><br>
 ### <span id="2-----">2 附件</span>
 
 #### <span id="21-----">2.1 资金变动类型</span>
