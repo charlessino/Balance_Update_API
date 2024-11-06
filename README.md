@@ -26,7 +26,7 @@ Endpoint: `/api-v1/balance-check`
 | ----------- | ---- | ------- | -------- | -------- | ------------------------ |
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道玩家ID |
 | timestamp  |  是   | string  | 10      |  1730456083   | 时间戳  |
-| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(member_id+timestamp+密钥)作为签名，确认请求的合法性     |
+| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | 将字符串进行md5加密    |
 
 ##### <span id="112-----">1.1.2 返回参数</span>
 
@@ -53,7 +53,7 @@ Endpoint: `/api-v1/balance-update`
 | order_id |    | string | 50    | S03827836  | 订单号，如涉及投注订单则传入订单号；如果不涉及订单，可能为空    |
 | remarks |    | string | 100    | 01034388769  | 备注，如资金变动类型为余额调整则为空   |
 | timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
-| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(a+b+c+d+g+密钥)作为签名，确认请求的合法性     |
+| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | 将字符串进行md5加密     |
 
 ##### <span id="122-----">1.2.2 返回参数</span>
 
