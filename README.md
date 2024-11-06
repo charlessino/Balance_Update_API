@@ -25,7 +25,7 @@ Endpoint: `/api-v1/balance-check`
 | 参数名      | 必填 | 类型    | 字段长度 | 例子     | 说明                     |
 | ----------- | ---- | ------- | -------- | -------- | ------------------------ |
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道玩家ID |
-| timestamp  |      | string  | 10      |  1730456083   | 时间戳  |
+| timestamp  |  是   | string  | 10      |  1730456083   | 时间戳  |
 | sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(member_id+timestamp+密钥)作为签名，确认请求的合法性     |
 
 ##### <span id="112-----">1.1.2 返回参数</span>
