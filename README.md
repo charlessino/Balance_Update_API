@@ -53,8 +53,7 @@ Endpoint: `/api-v1/balance-update`
 | order_id |    | string | 50    | S03827836  | 订单号，如涉及投注订单则传入订单号；如果不涉及订单，可能为空    |
 | remarks |    | string | 100    | 01034388769  | 备注，如资金变动类型为余额调整则为空   |
 | timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
-| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(transaction_id+member_id+action_value+    |
-|  |  |  |  |  | action_type+timestamp+密钥)|
+| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(transaction_id+member_id+<br>action_value+action_type+timestamp+密钥)    |
 ##### <span id="122-----">1.2.2 返回参数</span>
 
 | 参数名 | 类型   | 字段长度 | 例子    | 说明                                         |
