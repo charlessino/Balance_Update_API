@@ -50,7 +50,7 @@ Endpoint: `/api-v1/balance-update`
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道玩家ID |
 | action_value     | 是   | decimal | 18,2    | 820.00  | 资金变动的金额，正数代表增加，负数代表扣减，例如100代表余额增加100，-200代表余额扣减200  |
 | action_type | 是   | int | 2    | 1  | 资金变动类型，详见[附件2.1资金变动类型](#21-----)描述      |
-| order_id |    | string | 50    | S03827836  | 如涉及投注订单，这里会传订单号；如果不涉及订单，可能为空    |
+| order_id |    | string | 50    | S03827836  | 如涉及投注订单则传入订单号；如果不涉及订单，可能为空    |
 | remarks |    | string | 100    | 01034388769  | 备注，如资金变动类型为余额调整则为空   |
 | timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
 | sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(a+b+c+d+g+密钥)作为签名，确认请求的合法性     |
