@@ -16,8 +16,9 @@
 
 #### <span id="11-----">1.1 用户余额查询</span>
 
-Header：Content-Type: application/json;charset=utf-8
-Endpoint: /api-v1/balance-check
+Header：`Content-Type: application/json;charset=utf-8`
+<br>
+Endpoint: `/api-v1/balance-check`
 
 ##### <span id="111-----">1.1.1 传入参数</span>
 
@@ -38,8 +39,9 @@ Endpoint: /api-v1/balance-check
 
 #### <span id="12-----">1.2 请求余额更新</span>
 
-Header：Content-Type: application/json;charset=utf-8
-Endpoint: /api-v1/balance-update
+Header：`Content-Type: application/json;charset=utf-8`
+<br>
+Endpoint: `/api-v1/balance-update`
 
 ##### <span id="121-----">1.2.1 传入参数</span>
 
