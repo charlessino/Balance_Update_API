@@ -8,6 +8,9 @@
     + [1.2 请求余额更新](#12-----)
       + [1.2.1 传入参数](#121-----)
       + [1.2.2 返回参数](#122-----)
+    + [1.3 交易结果查询](#13-----)
+      + [1.3.1 传入参数](#131-----)
+      + [1.3.2 返回参数](#132-----)
   + [2 附件](#2-----)
     + [2.1 资金变动类型action_type](#21-----)
     + [2.2 错误代码error_code](#22-----)
@@ -54,6 +57,7 @@ Endpoint: `/api-v1/balance-update`
 | remarks |    | string | 100    | 01034388769  | 备注，如资金变动类型为余额调整则为空   |
 | timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
 | sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(transaction_id+member_id+<br>action_value+action_type+<br>timestamp+密钥)    |
+
 ##### <span id="122-----">1.2.2 返回参数</span>
 
 | 参数名 | 类型   | 字段长度 | 例子    | 说明                                         |
@@ -61,6 +65,29 @@ Endpoint: `/api-v1/balance-update`
 | transaction_id         | string  | 32      |  23985235     | 交易流水号       |
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 玩家余额，如果成功返回最新余额，如果失败返回当前余额   |
+| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
+
+
+#### <span id="13-----">1.3 交易结果查询</span>
+
+Header：`Content-Type: application/json;charset=utf-8`
+<br>
+Endpoint: `/api-v1/transaction-check`
+
+##### <span id="131-----">1.3.1 传入参数</span>
+
+| 参数名      | 必填 | 类型    | 字段长度 | 例子     | 说明                     |
+| ----------- | ---- | ------- | -------- | -------- | ------------------------ |
+| transaction_id       | 是   | string  | 32       |     23985235     | 交易流水号       |
+| timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
+| sign  |  是   | string  | 32    |  827ccb0eea8a706c4c34a16891f84e7b  | md5(transaction_id+timestamp+密钥)    |
+
+##### <span id="132-----">1.3.2 返回参数</span>
+
+| 参数名 | 类型   | 字段长度 | 例子    | 说明                                         |
+| ------ | ------ | -------- | ------- | -------------------------------------------- |
+| transaction_id         | string  | 32      |  23985235     | 交易流水号       |
+| status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
 
 ### <span id="2-----">2 附件</span>
